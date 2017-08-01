@@ -27,7 +27,7 @@ def doTangshiCrawler():
     savedCnt = 0
     failedCnt = 0
     #len(linkList)
-    for ind in range(581,len(linkList)):
+    for ind in range(len(linkList)):
         item = linkList[ind]
         print Crawler.base_url+item
         guwenPage = urllib2.urlopen(Crawler.base_url+item).read()
@@ -98,7 +98,7 @@ def doSongciCrawler():
     savedCnt = 0
     failedCnt = 0
     #len(linkList)
-    for ind in range(83,len(linkList)):
+    for ind in range(len(linkList)):
         item = linkList[ind]
         print Crawler.base_url+item
         guwenPage = urllib2.urlopen(Crawler.base_url+item).read()
